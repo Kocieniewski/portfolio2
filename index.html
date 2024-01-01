@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miłosz - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="ja">Miłosz Kocieniewski</h1>
+    <p class="ja">Web Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>O mnie</h2>
+    <p>Jestem uczniem szkoły ponadpodstawowej <a href="https://maps.app.goo.gl/CSVXuM1Q2q4bHUJM6" class="blue">ZSMEIE</a> w Toruniu, interesuję się tworzeniem stron internetowych. Miałem możliwość uczenia się języka angielskiego, niemieckiego i koreańskiego.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projekty</h2>
+    <ul>
+      <li>
+        <a href="https://kocieniewski.github.io/zadanie1/" target="_blank">
+          <img src="zdha.png" alt="Projekt 1">
+          <h3>Zadanie egzaminacyjne #1</h3>
+        </a>
+      </li>
+      <li class="lewo">
+        <a href="https://kocieniewski.github.io/zadanie2/" target="_blank" class="lewo">
+          <img src="dasdas.png" alt="Projekt 2">
+          <h3>Zadanie egzaminacyjne #2</h3>
+        </a>
+      </li>
+    </ul>
+    <p>Resztę projektów można znaleźć na moim <a class="blue" href="https://github.com/Kocieniewski">profilu</a> w GitHub'ie</p>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Skontaktuj się ze mną poprzez <a href="mailto:miloszkocieniewski6@gmail.com">e-mail</a>.</p>
+  </section>
+
+  <footer>
+    <div id="zegarek">
+      <script>
+        function zegar() {
+          var data = new Date();
+          var godzina = data.getHours();
+          var min = data.getMinutes();
+          var sek = data.getSeconds();
+          var terazjest = ""+godzina+
+          ((min<10)?":0":":")+min+
+          ((sek<10)?":0":":")+sek;
+          document.getElementById("zegarek").innerHTML = terazjest;
+          setTimeout("zegar()", 1000);
+        }
+        zegar();
+      </script>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
